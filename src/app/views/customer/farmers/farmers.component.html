@@ -1,0 +1,429 @@
+<div class="row">
+  <!-- <button class="open" (click)="full()">fullscreen</button>
+    <button class="close">fullscreen Esc</button> -->
+  <div class="col-12">
+    <div class="row align-items-center justify-content-between py-2">
+      <div class="d-flex col-sm col">
+        <!-- <h4 class="title m-0 me-3">Current Analysis</h4> -->
+        <div class="links">
+          <a [routerLink]="['/customer/farmers']" class="md-ripples ripples-dark" routerLinkActive="active">Farmers
+            Leads</a>
+          <a [routerLink]="['/customer/farmers-right']" class="md-ripples ripples-dark" routerLinkActive="active">Farmer
+            Rights</a>
+          <!-- <a [routerLink]="['/customer/market-place']" routerLinkActive="active">Market Place</a> -->
+        </div>
+      </div>
+      <div class="separator mb-2"></div>
+
+      <div class="container-fluid p-0" style="position: relative;">
+        <drag-scroll scrollbar-hidden="true" drag-scroll-y-disabled="true" (dsInitialized)="onDragScrollInitialized()"
+          (indexChanged)="onIndexChanged($event)" (reachesLeftBound)="leftBoundStat($event)"
+          (reachesRightBound)="rightBoundStat($event)" (snapAnimationFinished)="onSnapAnimationFinished()"
+          (dragStart)="onDragStart()" (dragEnd)="onDragEnd()" #nav>
+
+          <div drag-scroll-item *ngIf="analyticsDetails != null || analyticsDetails != undefined">
+            <div type="button" class="NormalCard straightBox 100_percent md-ripples ripples-light"
+              data-label="Farmer Lead" [ngClass]="{'active' : isLeadsDetailShown == true}"
+              (click)="toggleShowLeadsDetail()">
+              <div class="labels" *ngIf="analyticsDetails !=null">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="labelText">Leads (#)</div>
+                  <span class="target" [attr.title]="analyticsDetails.collecteLeads.target">Target -
+                    {{analyticsDetails.collecteLeads.target}}</span>
+                </div>
+
+                <div class="valueDiv">
+                  <div class="numbers me-3" [attr.title]="analyticsDetails.collecteLeads.achieved">
+                    {{analyticsDetails.collecteLeads.achieved}}</div>
+                  <div class="text">
+                    <span class="arrowDown">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 774.55 484.26">
+                        <title>arrow_down</title>
+                        <g id="Layer_2" data-name="Layer 2">
+                          <g id="Layer_1-2" data-name="Layer 1">
+                            <path
+                              d="M608.25,387.21l-173.4-173.4c-16.94,17-34.21,34.38-51.51,51.72q-28.77,28.85-57.61,57.63c-14.68,14.6-32.13,19.54-51.69,12.43a56.74,56.74,0,0,1-19.86-12.87Q134.54,203.74,15.44,84.21C-9.48,59.24-3.48,20.72,28,5c16.71-8.33,33.36-6,48.73,4.46a61.8,61.8,0,0,1,8.55,7.65q100.08,100,200.08,200.1a49,49,0,0,1,3.71,4.71l2.3.86c1-1.74,1.64-3.82,3-5.2q52.41-52.58,105-105c14.74-14.73,32.08-19.51,52.11-13.19C459.56,102,466.17,107,472.13,113Q572.52,213.38,672.91,313.79a44.87,44.87,0,0,1,3.37,4.34l1.59-.64v-5q0-58.24,0-116.49c0-20.18,8.3-35.66,26.21-45.5,21.72-11.93,51.22-3.33,63.64,18.15,4.93,8.52,6.81,17.57,6.81,27.22q0,118.74,0,237.48c0,20.73-8.61,36.6-27.45,45.46A57.76,57.76,0,0,1,723.53,484c-79,.37-158,.28-237,.19-23.92,0-42.13-13.21-48.65-34.74a48.09,48.09,0,0,1,41.59-61.88c3-.29,6-.33,9-.33q57,0,114,0Z" />
+                          </g>
+                        </g>
+                      </svg>
+                    </span>
+                    <span class="arrowUp">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 774.55 484.26">
+                        <title>arrow_up</title>
+                        <g id="Layer_2" data-name="Layer 2">
+                          <g id="Layer_1-2" data-name="Layer 1">
+                            <path
+                              d="M608.25,97,434.85,270.45c-16.94-17-34.21-34.39-51.51-51.73q-28.77-28.84-57.61-57.63C311.05,146.5,293.6,141.55,274,148.67a56.74,56.74,0,0,0-19.86,12.87q-119.64,119-238.74,238.51C-9.48,425-3.48,463.54,28,479.22c16.71,8.32,33.36,6,48.73-4.46a61.8,61.8,0,0,0,8.55-7.65q100.08-100,200.08-200.1a50.24,50.24,0,0,0,3.71-4.71l2.3-.87c1,1.75,1.64,3.83,3,5.2q52.41,52.59,105,105c14.74,14.73,32.08,19.51,52.11,13.19,8.11-2.56,14.72-7.61,20.68-13.57Q572.52,270.88,672.91,170.46a43.55,43.55,0,0,0,3.37-4.33l1.59.64v5q0,58.24,0,116.49c0,20.18,8.3,35.66,26.21,45.5,21.72,11.93,51.22,3.33,63.64-18.15,4.93-8.53,6.81-17.57,6.81-27.23q0-118.73,0-237.47c0-20.74-8.61-36.6-27.45-45.46A57.76,57.76,0,0,0,723.53.27c-79-.37-158-.28-237-.19-23.92,0-42.13,13.21-48.65,34.73a48.09,48.09,0,0,0,41.59,61.88,89.82,89.82,0,0,0,9,.34q57,0,114,0Z" />
+                          </g>
+                        </g>
+                      </svg>
+                    </span>
+                    <span class="targetPercent my-3"></span>
+                    <div class="targettxt"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="meterGauge">
+                <img src="assets/images/icons/new-miter-2.svg" class="img-fluid meterimg">
+                <div class="meterlabel">Target Meter</div>
+                <div class="meterPercentage"></div>
+                <div class="indicator">
+                  <div>
+                    <!-- <img src="assets/images/icons/indicator-2.svg" class="img-fluid"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 21.48 148.17">
+                      <defs>
+                        <clipPath id="clip-path" transform="translate(0 0)">
+                          <path
+                            d="M8.81,1.82,0,146.11a2,2,0,0,0,1.94,2.06h17.6a2,2,0,0,0,1.94-2.06L12.67,1.82A1.93,1.93,0,0,0,8.81,1.82Z"
+                            style="fill:none" />
+                        </clipPath>
+                      </defs>
+                      <title>trangle4_1</title>
+                      <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_2-2" data-name="Layer 2">
+                          <g style="clip-path:url(#clip-path)">
+                            <rect x="-68.71" y="68.71" width="148.17" height="10.74"
+                              transform="translate(79.45 68.71) rotate(90)" style="fill:#aa271d" />
+                            <rect x="-57.97" y="68.71" width="148.17" height="10.74"
+                              transform="translate(90.19 57.97) rotate(90)" style="fill:red" />
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div drag-scroll-item *ngIf="analyticsDetails != null || analyticsDetails != undefined">
+            <div type="button" class="NormalCard straightBox 100_percent md-ripples ripples-light"
+              data-label="Croping Area" [ngClass]="{'active' : isCropAreaDetailShown == true}"
+              (click)="toggleShowCropAreaDetail()">
+              <div class="labels" *ngIf="analyticsDetails !=null">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="labelText">Croping Area (#)</div>
+                  <span class="target" [attr.title]="analyticsDetails.cropingArea.target">Target -
+                    {{analyticsDetails.cropingArea.target}}</span>
+                </div>
+
+                <div class="valueDiv">
+                  <div class="numbers me-3" [attr.title]="analyticsDetails.cropingArea.achieved">
+                    {{analyticsDetails.cropingArea.achieved}}</div>
+                  <div class="text">
+                    <span class="arrowDown">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 774.55 484.26">
+                        <title>arrow_down</title>
+                        <g id="Layer_2" data-name="Layer 2">
+                          <g id="Layer_1-2" data-name="Layer 1">
+                            <path
+                              d="M608.25,387.21l-173.4-173.4c-16.94,17-34.21,34.38-51.51,51.72q-28.77,28.85-57.61,57.63c-14.68,14.6-32.13,19.54-51.69,12.43a56.74,56.74,0,0,1-19.86-12.87Q134.54,203.74,15.44,84.21C-9.48,59.24-3.48,20.72,28,5c16.71-8.33,33.36-6,48.73,4.46a61.8,61.8,0,0,1,8.55,7.65q100.08,100,200.08,200.1a49,49,0,0,1,3.71,4.71l2.3.86c1-1.74,1.64-3.82,3-5.2q52.41-52.58,105-105c14.74-14.73,32.08-19.51,52.11-13.19C459.56,102,466.17,107,472.13,113Q572.52,213.38,672.91,313.79a44.87,44.87,0,0,1,3.37,4.34l1.59-.64v-5q0-58.24,0-116.49c0-20.18,8.3-35.66,26.21-45.5,21.72-11.93,51.22-3.33,63.64,18.15,4.93,8.52,6.81,17.57,6.81,27.22q0,118.74,0,237.48c0,20.73-8.61,36.6-27.45,45.46A57.76,57.76,0,0,1,723.53,484c-79,.37-158,.28-237,.19-23.92,0-42.13-13.21-48.65-34.74a48.09,48.09,0,0,1,41.59-61.88c3-.29,6-.33,9-.33q57,0,114,0Z" />
+                          </g>
+                        </g>
+                      </svg>
+                    </span>
+                    <span class="arrowUp">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 774.55 484.26">
+                        <title>arrow_up</title>
+                        <g id="Layer_2" data-name="Layer 2">
+                          <g id="Layer_1-2" data-name="Layer 1">
+                            <path
+                              d="M608.25,97,434.85,270.45c-16.94-17-34.21-34.39-51.51-51.73q-28.77-28.84-57.61-57.63C311.05,146.5,293.6,141.55,274,148.67a56.74,56.74,0,0,0-19.86,12.87q-119.64,119-238.74,238.51C-9.48,425-3.48,463.54,28,479.22c16.71,8.32,33.36,6,48.73-4.46a61.8,61.8,0,0,0,8.55-7.65q100.08-100,200.08-200.1a50.24,50.24,0,0,0,3.71-4.71l2.3-.87c1,1.75,1.64,3.83,3,5.2q52.41,52.59,105,105c14.74,14.73,32.08,19.51,52.11,13.19,8.11-2.56,14.72-7.61,20.68-13.57Q572.52,270.88,672.91,170.46a43.55,43.55,0,0,0,3.37-4.33l1.59.64v5q0,58.24,0,116.49c0,20.18,8.3,35.66,26.21,45.5,21.72,11.93,51.22,3.33,63.64-18.15,4.93-8.53,6.81-17.57,6.81-27.23q0-118.73,0-237.47c0-20.74-8.61-36.6-27.45-45.46A57.76,57.76,0,0,0,723.53.27c-79-.37-158-.28-237-.19-23.92,0-42.13,13.21-48.65,34.73a48.09,48.09,0,0,0,41.59,61.88,89.82,89.82,0,0,0,9,.34q57,0,114,0Z" />
+                          </g>
+                        </g>
+                      </svg>
+                    </span>
+                    <span class="targetPercent my-3"></span>
+                    <div class="targettxt"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="meterGauge">
+                <img src="assets/images/icons/new-miter-2.svg" class="img-fluid meterimg">
+                <div class="meterlabel">Target Meter</div>
+                <div class="meterPercentage"></div>
+                <div class="indicator">
+                  <div>
+                    <!-- <img src="assets/images/icons/indicator-2.svg" class="img-fluid"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 21.48 148.17">
+                      <defs>
+                        <clipPath id="clip-path" transform="translate(0 0)">
+                          <path
+                            d="M8.81,1.82,0,146.11a2,2,0,0,0,1.94,2.06h17.6a2,2,0,0,0,1.94-2.06L12.67,1.82A1.93,1.93,0,0,0,8.81,1.82Z"
+                            style="fill:none" />
+                        </clipPath>
+                      </defs>
+                      <title>trangle4_1</title>
+                      <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_2-2" data-name="Layer 2">
+                          <g style="clip-path:url(#clip-path)">
+                            <rect x="-68.71" y="68.71" width="148.17" height="10.74"
+                              transform="translate(79.45 68.71) rotate(90)" style="fill:#aa271d" />
+                            <rect x="-57.97" y="68.71" width="148.17" height="10.74"
+                              transform="translate(90.19 57.97) rotate(90)" style="fill:red" />
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div drag-scroll-item *ngIf="analyticsDetails != null || analyticsDetails != undefined">
+            <div type="button" class="NormalCard straightBox 100_percent md-ripples ripples-light"
+              data-label="Expected Production" [ngClass]="{'active' : isExpectedProductionDetailShown == true}"
+              (click)="toggleShowExpectedProductionDetail()">
+              <div class="labels" *ngIf="analyticsDetails !=null">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="labelText">Expected Production</div>
+                  <span class="target" [attr.title]="analyticsDetails.expectedProduction.target">Target -
+                    {{analyticsDetails.expectedProduction.target}}</span>
+                </div>
+
+                <div class="valueDiv">
+                  <div class="numbers me-3" [attr.title]="analyticsDetails.expectedProduction.achieved">
+                    {{analyticsDetails.expectedProduction.achieved}}</div>
+                  <div class="text">
+                    <span class="arrowDown">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 774.55 484.26">
+                        <title>arrow_down</title>
+                        <g id="Layer_2" data-name="Layer 2">
+                          <g id="Layer_1-2" data-name="Layer 1">
+                            <path
+                              d="M608.25,387.21l-173.4-173.4c-16.94,17-34.21,34.38-51.51,51.72q-28.77,28.85-57.61,57.63c-14.68,14.6-32.13,19.54-51.69,12.43a56.74,56.74,0,0,1-19.86-12.87Q134.54,203.74,15.44,84.21C-9.48,59.24-3.48,20.72,28,5c16.71-8.33,33.36-6,48.73,4.46a61.8,61.8,0,0,1,8.55,7.65q100.08,100,200.08,200.1a49,49,0,0,1,3.71,4.71l2.3.86c1-1.74,1.64-3.82,3-5.2q52.41-52.58,105-105c14.74-14.73,32.08-19.51,52.11-13.19C459.56,102,466.17,107,472.13,113Q572.52,213.38,672.91,313.79a44.87,44.87,0,0,1,3.37,4.34l1.59-.64v-5q0-58.24,0-116.49c0-20.18,8.3-35.66,26.21-45.5,21.72-11.93,51.22-3.33,63.64,18.15,4.93,8.52,6.81,17.57,6.81,27.22q0,118.74,0,237.48c0,20.73-8.61,36.6-27.45,45.46A57.76,57.76,0,0,1,723.53,484c-79,.37-158,.28-237,.19-23.92,0-42.13-13.21-48.65-34.74a48.09,48.09,0,0,1,41.59-61.88c3-.29,6-.33,9-.33q57,0,114,0Z" />
+                          </g>
+                        </g>
+                      </svg>
+                    </span>
+                    <span class="arrowUp">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 774.55 484.26">
+                        <title>arrow_up</title>
+                        <g id="Layer_2" data-name="Layer 2">
+                          <g id="Layer_1-2" data-name="Layer 1">
+                            <path
+                              d="M608.25,97,434.85,270.45c-16.94-17-34.21-34.39-51.51-51.73q-28.77-28.84-57.61-57.63C311.05,146.5,293.6,141.55,274,148.67a56.74,56.74,0,0,0-19.86,12.87q-119.64,119-238.74,238.51C-9.48,425-3.48,463.54,28,479.22c16.71,8.32,33.36,6,48.73-4.46a61.8,61.8,0,0,0,8.55-7.65q100.08-100,200.08-200.1a50.24,50.24,0,0,0,3.71-4.71l2.3-.87c1,1.75,1.64,3.83,3,5.2q52.41,52.59,105,105c14.74,14.73,32.08,19.51,52.11,13.19,8.11-2.56,14.72-7.61,20.68-13.57Q572.52,270.88,672.91,170.46a43.55,43.55,0,0,0,3.37-4.33l1.59.64v5q0,58.24,0,116.49c0,20.18,8.3,35.66,26.21,45.5,21.72,11.93,51.22,3.33,63.64-18.15,4.93-8.53,6.81-17.57,6.81-27.23q0-118.73,0-237.47c0-20.74-8.61-36.6-27.45-45.46A57.76,57.76,0,0,0,723.53.27c-79-.37-158-.28-237-.19-23.92,0-42.13,13.21-48.65,34.73a48.09,48.09,0,0,0,41.59,61.88,89.82,89.82,0,0,0,9,.34q57,0,114,0Z" />
+                          </g>
+                        </g>
+                      </svg>
+                    </span>
+                    <span class="targetPercent my-3"></span>
+                    <div class="targettxt"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="meterGauge">
+                <img src="assets/images/icons/new-miter-2.svg" class="img-fluid meterimg">
+                <div class="meterlabel">Target Meter</div>
+                <div class="meterPercentage"></div>
+                <div class="indicator">
+                  <div>
+                    <!-- <img src="assets/images/icons/indicator-2.svg" class="img-fluid"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 21.48 148.17">
+                      <defs>
+                        <clipPath id="clip-path" transform="translate(0 0)">
+                          <path
+                            d="M8.81,1.82,0,146.11a2,2,0,0,0,1.94,2.06h17.6a2,2,0,0,0,1.94-2.06L12.67,1.82A1.93,1.93,0,0,0,8.81,1.82Z"
+                            style="fill:none" />
+                        </clipPath>
+                      </defs>
+                      <title>trangle4_1</title>
+                      <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_2-2" data-name="Layer 2">
+                          <g style="clip-path:url(#clip-path)">
+                            <rect x="-68.71" y="68.71" width="148.17" height="10.74"
+                              transform="translate(79.45 68.71) rotate(90)" style="fill:#aa271d" />
+                            <rect x="-57.97" y="68.71" width="148.17" height="10.74"
+                              transform="translate(90.19 57.97) rotate(90)" style="fill:red" />
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div drag-scroll-item *ngIf="analyticsDetails != null || analyticsDetails != undefined">
+            <div type="button" class="NormalCard straightBox 100_percent md-ripples ripples-light"
+              data-label="Expected Value" [ngClass]="{'active' : isExpectedValueDetailShown == true}"
+              (click)="toggleShowExpectedValueDetail()">
+              <div class="labels" *ngIf="analyticsDetails !=null">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="labelText">Expected Value</div>
+                  <span class="target" [attr.title]="analyticsDetails.expectedValue.target">Target -
+                    {{analyticsDetails.expectedValue.target}}</span>
+                </div>
+
+                <div class="valueDiv">
+                  <div class="numbers me-3" [attr.title]="analyticsDetails.expectedValue.achieved">
+                    {{analyticsDetails.expectedValue.achieved}}</div>
+                  <div class="text">
+                    <span class="arrowDown">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 774.55 484.26">
+                        <title>arrow_down</title>
+                        <g id="Layer_2" data-name="Layer 2">
+                          <g id="Layer_1-2" data-name="Layer 1">
+                            <path
+                              d="M608.25,387.21l-173.4-173.4c-16.94,17-34.21,34.38-51.51,51.72q-28.77,28.85-57.61,57.63c-14.68,14.6-32.13,19.54-51.69,12.43a56.74,56.74,0,0,1-19.86-12.87Q134.54,203.74,15.44,84.21C-9.48,59.24-3.48,20.72,28,5c16.71-8.33,33.36-6,48.73,4.46a61.8,61.8,0,0,1,8.55,7.65q100.08,100,200.08,200.1a49,49,0,0,1,3.71,4.71l2.3.86c1-1.74,1.64-3.82,3-5.2q52.41-52.58,105-105c14.74-14.73,32.08-19.51,52.11-13.19C459.56,102,466.17,107,472.13,113Q572.52,213.38,672.91,313.79a44.87,44.87,0,0,1,3.37,4.34l1.59-.64v-5q0-58.24,0-116.49c0-20.18,8.3-35.66,26.21-45.5,21.72-11.93,51.22-3.33,63.64,18.15,4.93,8.52,6.81,17.57,6.81,27.22q0,118.74,0,237.48c0,20.73-8.61,36.6-27.45,45.46A57.76,57.76,0,0,1,723.53,484c-79,.37-158,.28-237,.19-23.92,0-42.13-13.21-48.65-34.74a48.09,48.09,0,0,1,41.59-61.88c3-.29,6-.33,9-.33q57,0,114,0Z" />
+                          </g>
+                        </g>
+                      </svg>
+                    </span>
+                    <span class="arrowUp">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 774.55 484.26">
+                        <title>arrow_up</title>
+                        <g id="Layer_2" data-name="Layer 2">
+                          <g id="Layer_1-2" data-name="Layer 1">
+                            <path
+                              d="M608.25,97,434.85,270.45c-16.94-17-34.21-34.39-51.51-51.73q-28.77-28.84-57.61-57.63C311.05,146.5,293.6,141.55,274,148.67a56.74,56.74,0,0,0-19.86,12.87q-119.64,119-238.74,238.51C-9.48,425-3.48,463.54,28,479.22c16.71,8.32,33.36,6,48.73-4.46a61.8,61.8,0,0,0,8.55-7.65q100.08-100,200.08-200.1a50.24,50.24,0,0,0,3.71-4.71l2.3-.87c1,1.75,1.64,3.83,3,5.2q52.41,52.59,105,105c14.74,14.73,32.08,19.51,52.11,13.19,8.11-2.56,14.72-7.61,20.68-13.57Q572.52,270.88,672.91,170.46a43.55,43.55,0,0,0,3.37-4.33l1.59.64v5q0,58.24,0,116.49c0,20.18,8.3,35.66,26.21,45.5,21.72,11.93,51.22,3.33,63.64-18.15,4.93-8.53,6.81-17.57,6.81-27.23q0-118.73,0-237.47c0-20.74-8.61-36.6-27.45-45.46A57.76,57.76,0,0,0,723.53.27c-79-.37-158-.28-237-.19-23.92,0-42.13,13.21-48.65,34.73a48.09,48.09,0,0,0,41.59,61.88,89.82,89.82,0,0,0,9,.34q57,0,114,0Z" />
+                          </g>
+                        </g>
+                      </svg>
+                    </span>
+                    <span class="targetPercent my-3"></span>
+                    <div class="targettxt"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="meterGauge">
+                <img src="assets/images/icons/new-miter-2.svg" class="img-fluid meterimg">
+                <div class="meterlabel">Target Meter</div>
+                <div class="meterPercentage"></div>
+                <div class="indicator">
+                  <div>
+                    <!-- <img src="assets/images/icons/indicator-2.svg" class="img-fluid"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 21.48 148.17">
+                      <defs>
+                        <clipPath id="clip-path" transform="translate(0 0)">
+                          <path
+                            d="M8.81,1.82,0,146.11a2,2,0,0,0,1.94,2.06h17.6a2,2,0,0,0,1.94-2.06L12.67,1.82A1.93,1.93,0,0,0,8.81,1.82Z"
+                            style="fill:none" />
+                        </clipPath>
+                      </defs>
+                      <title>trangle4_1</title>
+                      <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_2-2" data-name="Layer 2">
+                          <g style="clip-path:url(#clip-path)">
+                            <rect x="-68.71" y="68.71" width="148.17" height="10.74"
+                              transform="translate(79.45 68.71) rotate(90)" style="fill:#aa271d" />
+                            <rect x="-57.97" y="68.71" width="148.17" height="10.74"
+                              transform="translate(90.19 57.97) rotate(90)" style="fill:red" />
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div drag-scroll-item *ngIf="analyticsDetails != null || analyticsDetails != undefined">
+            <div type="button" class="NormalCard straightBox 100_percent md-ripples ripples-light"
+              data-label="Verified Leads" [ngClass]="{'active' : isVerifiedLeadsDetailShown == true}"
+              (click)="toggleShowVerifiedLeadsDetail()">
+              <div class="labels" *ngIf="analyticsDetails !=null">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div class="labelText">Verified Leads</div>
+                  <span class="target" [attr.title]="analyticsDetails.verifiedLeads.target">Target -
+                    {{analyticsDetails.verifiedLeads.target}}</span>
+                </div>
+
+                <div class="valueDiv">
+                  <div class="numbers me-3" [attr.title]="analyticsDetails.verifiedLeads.achieved">
+                    {{analyticsDetails.verifiedLeads.achieved}}</div>
+                  <div class="text">
+                    <span class="arrowDown">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 774.55 484.26">
+                        <title>arrow_down</title>
+                        <g id="Layer_2" data-name="Layer 2">
+                          <g id="Layer_1-2" data-name="Layer 1">
+                            <path
+                              d="M608.25,387.21l-173.4-173.4c-16.94,17-34.21,34.38-51.51,51.72q-28.77,28.85-57.61,57.63c-14.68,14.6-32.13,19.54-51.69,12.43a56.74,56.74,0,0,1-19.86-12.87Q134.54,203.74,15.44,84.21C-9.48,59.24-3.48,20.72,28,5c16.71-8.33,33.36-6,48.73,4.46a61.8,61.8,0,0,1,8.55,7.65q100.08,100,200.08,200.1a49,49,0,0,1,3.71,4.71l2.3.86c1-1.74,1.64-3.82,3-5.2q52.41-52.58,105-105c14.74-14.73,32.08-19.51,52.11-13.19C459.56,102,466.17,107,472.13,113Q572.52,213.38,672.91,313.79a44.87,44.87,0,0,1,3.37,4.34l1.59-.64v-5q0-58.24,0-116.49c0-20.18,8.3-35.66,26.21-45.5,21.72-11.93,51.22-3.33,63.64,18.15,4.93,8.52,6.81,17.57,6.81,27.22q0,118.74,0,237.48c0,20.73-8.61,36.6-27.45,45.46A57.76,57.76,0,0,1,723.53,484c-79,.37-158,.28-237,.19-23.92,0-42.13-13.21-48.65-34.74a48.09,48.09,0,0,1,41.59-61.88c3-.29,6-.33,9-.33q57,0,114,0Z" />
+                          </g>
+                        </g>
+                      </svg>
+                    </span>
+                    <span class="arrowUp">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 774.55 484.26">
+                        <title>arrow_up</title>
+                        <g id="Layer_2" data-name="Layer 2">
+                          <g id="Layer_1-2" data-name="Layer 1">
+                            <path
+                              d="M608.25,97,434.85,270.45c-16.94-17-34.21-34.39-51.51-51.73q-28.77-28.84-57.61-57.63C311.05,146.5,293.6,141.55,274,148.67a56.74,56.74,0,0,0-19.86,12.87q-119.64,119-238.74,238.51C-9.48,425-3.48,463.54,28,479.22c16.71,8.32,33.36,6,48.73-4.46a61.8,61.8,0,0,0,8.55-7.65q100.08-100,200.08-200.1a50.24,50.24,0,0,0,3.71-4.71l2.3-.87c1,1.75,1.64,3.83,3,5.2q52.41,52.59,105,105c14.74,14.73,32.08,19.51,52.11,13.19,8.11-2.56,14.72-7.61,20.68-13.57Q572.52,270.88,672.91,170.46a43.55,43.55,0,0,0,3.37-4.33l1.59.64v5q0,58.24,0,116.49c0,20.18,8.3,35.66,26.21,45.5,21.72,11.93,51.22,3.33,63.64-18.15,4.93-8.53,6.81-17.57,6.81-27.23q0-118.73,0-237.47c0-20.74-8.61-36.6-27.45-45.46A57.76,57.76,0,0,0,723.53.27c-79-.37-158-.28-237-.19-23.92,0-42.13,13.21-48.65,34.73a48.09,48.09,0,0,0,41.59,61.88,89.82,89.82,0,0,0,9,.34q57,0,114,0Z" />
+                          </g>
+                        </g>
+                      </svg>
+                    </span>
+                    <span class="targetPercent my-3"></span>
+                    <div class="targettxt"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="meterGauge">
+                <img src="assets/images/icons/new-miter-2.svg" class="img-fluid meterimg">
+                <div class="meterlabel">Target Meter</div>
+                <div class="meterPercentage"></div>
+                <div class="indicator">
+                  <div>
+                    <!-- <img src="assets/images/icons/indicator-2.svg" class="img-fluid"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                      viewBox="0 0 21.48 148.17">
+                      <defs>
+                        <clipPath id="clip-path" transform="translate(0 0)">
+                          <path
+                            d="M8.81,1.82,0,146.11a2,2,0,0,0,1.94,2.06h17.6a2,2,0,0,0,1.94-2.06L12.67,1.82A1.93,1.93,0,0,0,8.81,1.82Z"
+                            style="fill:none" />
+                        </clipPath>
+                      </defs>
+                      <title>trangle4_1</title>
+                      <g id="Layer_2" data-name="Layer 2">
+                        <g id="Layer_2-2" data-name="Layer 2">
+                          <g style="clip-path:url(#clip-path)">
+                            <rect x="-68.71" y="68.71" width="148.17" height="10.74"
+                              transform="translate(79.45 68.71) rotate(90)" style="fill:#aa271d" />
+                            <rect x="-57.97" y="68.71" width="148.17" height="10.74"
+                              transform="translate(90.19 57.97) rotate(90)" style="fill:red" />
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </drag-scroll>
+        <div class="drag-scroll-btn" *ngIf="!(leftNavDisabled && rightNavDisabled)">
+          <button mat-raised-button color="primary" [disabled]="leftNavDisabled" (click)="moveLeft()"
+            class="leftSideButton"><i class="fas fa-chevron-left"></i></button>
+          <button mat-raised-button color="primary" [disabled]="rightNavDisabled" (click)="moveRight()"
+            class="rightSideButton"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <div *ngIf="isLeadsDetailShown" class="col-12 detailAnalysis boxDetail">
+        <app-leads class="row"></app-leads>
+      </div>
+      <div *ngIf="isCropAreaDetailShown" class="col-12 detailAnalysis boxDetail">
+        <app-crop-area class="row"></app-crop-area>
+      </div>
+      <div *ngIf="isExpectedProductionDetailShown" class="col-12 detailAnalysis boxDetail">
+        <app-expected-production class="row"></app-expected-production>
+      </div>
+      <div *ngIf="isExpectedValueDetailShown" class="col-12 detailAnalysis boxDetail">
+        <app-expected-value class="row"></app-expected-value>
+      </div>
+      <div *ngIf="isVerifiedLeadsDetailShown" class="col-12 detailAnalysis boxDetail">
+        <app-verified-leads class="row"></app-verified-leads>
+      </div>
+    </div>
+  </div>
+</div>

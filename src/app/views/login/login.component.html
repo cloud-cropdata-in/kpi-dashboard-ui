@@ -1,0 +1,46 @@
+<section class="loginContainer">
+    <div class="leftColor" style="background-image: url('assets/images/login-bg.jpg');"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 leftSide">
+                <div class="centerCon text-center">
+                    <img src="https://cropdata.in/images/cropdata-logo-blue.svg" class="img-fluid" width="150">
+                    <h1>Key Performance Indicator</h1>
+                    <h3>CropData KPI Dashboard</h3>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 rightSide">
+                <form class="centerCon" [formGroup]="loginFrom" (ngSubmit)="submitForm()" novalidate>
+                    <h2 class="mb-4">Login</h2>
+
+                    <div class="wrong-details text-danger" *ngIf="invalidLogin">
+                        <div>Please enter valid email and password</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">User Name </label>
+                        <input type="text" class="form-control" placeholder="Email" id="email" formControlName="userName" [ngClass]="{'is-invalid': loginFrom.get('userName').touched && loginFrom.get('userName').invalid}">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        <div class="invalid-feedback">
+                            <div>Please enter email address</div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Password</label>
+                        <div class="input-group mb-3">
+                            <input type="password" class="form-control" id="password" placeholder="Password" formControlName="userPassword" [ngClass]="{'is-invalid': loginFrom.get('userPassword').touched && loginFrom.get('userPassword').invalid}">
+                            <span class="input-group-text" type="button" (click)="showPassword()" id="passwordShowBtn">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                <i class="fa fa-eye-slash" aria-hidden="true" style="display: none;"></i>
+                              
+                            </span>
+                        </div>
+                        <div class="invalid-feedback">
+                            <div>Please enter password</div>
+                        </div>
+                    </div>
+                    <a type="button" (click)="submitForm()" class="btn btn-primary activeEffect">Submit</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

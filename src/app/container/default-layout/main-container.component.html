@@ -1,0 +1,141 @@
+<!--Page Loader-->
+<div id="pageLoader">
+    <div class="text-center spinner-container">
+        <div class="sk-three-strings">
+            <div class="ng-star-inserted"></div>
+            <div class="ng-star-inserted"></div>
+            <div class="ng-star-inserted"></div>
+        </div>
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+</div>
+<!--/ Page Loader-->
+
+
+<!--layout-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-auto p-0 leftSidebar">
+            <!--header-->
+            <app-header></app-header>
+            <!--/ header-->
+        </div>
+        <div class="col p-0 middleContainer" style="max-width: calc(100% - 50px);">
+            <div class="container-fluid pageHeader">
+                <!--topbar-->
+                <app-topbar></app-topbar>
+                <!--/ topbar-->
+            </div>
+
+            <!--main-->
+            <main>
+                <div class="breadcrumb d-flex align-items-center justify-content-between">
+                    <!--breadcrumb-->
+                    <xng-breadcrumb></xng-breadcrumb>
+                    <!--/ breadcrumb-->
+
+                    <!--legends-->
+                    <div class="legendPoints">
+                        <ul class="d-flex">
+                            <li class="d-flex">
+                                <span class="worst" title="Worst" id="worstDivButton" data-bs-toggle="dropdown" aria-expanded="false"></span>
+                                <div class="dropdown-menu p-3" aria-labelledby="worstDivButton">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="worst me-2"></span>
+                                        <h6 class="m-0">Worst</h6>
+                                    </div>
+                                    <p class="mb-0">The task which is performing worst</p>
+                                </div>
+                            </li>
+
+                            <li class="d-flex">
+                                <span class="bad" title="Bad" id="badDivButton" data-bs-toggle="dropdown" aria-expanded="false"></span>
+                                <div class="dropdown-menu p-3" aria-labelledby="badDivButton">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="bad me-2"></span>
+                                        <h6 class="m-0">Bad</h6>
+                                    </div>
+                                    <p class="mb-0">The task which is performing bad</p>
+                                </div>
+                            </li>
+
+                            <li class="d-flex">
+                                <span class="poor" title="Poor" id="poorDivButton" data-bs-toggle="dropdown" aria-expanded="false"></span>
+                                <div class="dropdown-menu p-3" aria-labelledby="poorDivButton">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="poor me-2"></span>
+                                        <h6 class="m-0">Poor</h6>
+                                    </div>
+                                    <p class="mb-0">The task which is performing poor</p>
+                                </div>
+                            </li>
+                            <li class="d-flex">
+                                <span class="on-target" title="On Target" id="onTargetDivButton" data-bs-toggle="dropdown" aria-expanded="false"></span>
+                                <div class="dropdown-menu p-3" aria-labelledby="onTargetDivButton">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="on-target me-2"></span>
+                                        <h6 class="m-0">On Target</h6>
+                                    </div>
+                                    <p class="mb-0">The task which is on track as per the given target</p>
+                                </div>
+                            </li>
+                            <li class="d-flex">
+                                <span class="super" title="Super" id="superDivButton" data-bs-toggle="dropdown" aria-expanded="false"></span>
+                                <div class="dropdown-menu p-3" aria-labelledby="superDivButton">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="super me-2"></span>
+                                        <h6 class="m-0">Super</h6>
+                                    </div>
+                                    <p class="mb-0">The task which is running with excellent performance</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/ legends-->
+                </div>
+
+                <!--changable container-->
+                <div class="container-fluid maxWidthSet">
+                    <!--changable router-->
+                    <router-outlet>
+                    </router-outlet>
+                    <!--/ changable router-->
+                </div>
+                <!--/ changable container-->
+
+            </main>
+            <!--/ main-->
+
+            <!--bottombar-->
+            <div class="container-fluid pageFooter">
+                <app-bottombar></app-bottombar>
+            </div>
+            <!--/ bottombar-->
+        </div>
+
+        <!--right Sidebar-->
+        <div class="rightSidebar p-0">
+            <div class="d-flex notificationHead justify-content-between align-items-center">
+                <h6 class="m-0">Notification</h6>
+                <i class="fas fa-times closeRightSidebar" type="button" title="Close"></i>
+            </div>
+            <div class="backG">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 notificationContent">
+                            <!--notification-->
+                            <app-notification></app-notification>
+                            <!--/ notification-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ right Sidebar-->
+    </div>
+</div>
+<!--/ layout-->

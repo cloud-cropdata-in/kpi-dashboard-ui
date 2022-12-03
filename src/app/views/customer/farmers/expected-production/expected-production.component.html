@@ -1,0 +1,120 @@
+<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4" *ngIf="regionalDetails !=null">
+  <div class="table-container mat-elevation-z8">
+    <table class="table custom-table simpleTable">
+      <thead>
+        <tr>
+          <th width="180" style="vertical-align: top;">Region</th>
+          <th style="text-align:left; vertical-align: top;">Production in (Tons) <div class="d-flex align-items-center justify-content-between standardScale">
+              <span class="standardScalePercentage"></span>
+              <span class="d-none dataTarget">{{ regionalTarget }}</span>
+              <span class="d-none dataCurrentValue">{{ regionalAchieved }}</span>
+              <span></span>
+              <span>100%</span>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody *ngIf="regionalDetails.data !=null">
+        <tr data-href="" class="regionDetails" *ngFor="let row of regionalDetails.data">
+          <td>
+            <a class="link md-ripples ripples-light"></a>{{row.name}} <div class=" d-flex align-items-center">
+              <div class="col-auto text-center data-current-value">{{row.achieved}}</div>
+              <div class="col text-center col-auto px-2">/</div>
+              <div class="col-auto text-center data-target">{{row.target}}</div>
+            </div>
+          </td>
+          <td>
+            <div class="row align-items-center justify-content-between mt-md-4">
+              <div class="col">
+                <div style="position: relative;">
+                  <div class="currentValuePercentage"></div>
+                  <div class="targetGredientDefaultRange"></div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4" *ngIf="commodityDetails !=null">
+  <div class="table-container mat-elevation-z8">
+    <table class="table custom-table simpleTable">
+      <thead>
+        <tr>
+          <th width="180" style="vertical-align: top;">Commodity</th>
+          <th style="text-align:left; vertical-align: top;">Production in (Tons) <div class="d-flex align-items-center justify-content-between standardScale">
+              <span class="standardScalePercentage"></span>
+              <span class="d-none dataTarget">{{ commodityTarget }}</span>
+              <span class="d-none dataCurrentValue">{{ commodityAchieved }}</span>
+              <span></span>
+              <span>100%</span>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody *ngIf="commodityDetails.data !=null">
+        <tr data-href="" class="regionDetails" *ngFor="let row of commodityDetails.data">
+          <td>
+            <a class="link md-ripples ripples-light"></a>{{row.name}} <div class=" d-flex align-items-center">
+              <div class="col-auto text-center data-current-value">{{row.achieved}}</div>
+              <div class="col text-center col-auto px-2">/</div>
+              <div class="col-auto text-center data-target">{{row.target}}</div>
+            </div>
+          </td>
+          <td>
+            <div class="row align-items-center justify-content-between mt-md-4">
+              <div class="col">
+                <div style="position: relative;">
+                  <div class="currentValuePercentage"></div>
+                  <div class="targetGredientDefaultRange"></div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4" *ngIf="landholdingsDetails !=null">
+  <div class="table-container mat-elevation-z8">
+    <table class="table custom-table simpleTable">
+      <thead>
+        <tr>
+          <th width="180" style="vertical-align: top;">Land Holdings</th>
+          <th style="text-align:left; vertical-align: top;">Production in (Tons) <div class="d-flex align-items-center justify-content-between standardScale">
+              <span class="standardScalePercentage"></span>
+              <span class="d-none dataTarget">{{ landholdingsTarget }}</span>
+              <span class="d-none dataCurrentValue">{{ landholdingsAchieved }}</span>
+              <span></span>
+              <span>100%</span>
+            </div>
+          </th>
+        </tr>
+      </thead>
+      <tbody *ngIf="landholdingsDetails.data !=null">
+        <tr data-href="" class="regionDetails" *ngFor="let row of landholdingsDetails.data">
+          <td>
+            <a class="link md-ripples ripples-light"></a>{{row.name}} <div class=" d-flex align-items-center">
+              <div class="col-auto text-center data-current-value">{{row.achieved}}</div>
+              <div class="col text-center col-auto px-2">/</div>
+              <div class="col-auto text-center data-target">{{row.target}}</div>
+            </div>
+          </td>
+          <td>
+            <div class="row align-items-center justify-content-between mt-md-4">
+              <div class="col">
+                <div style="position: relative;">
+                  <div class="currentValuePercentage"></div>
+                  <div class="targetGredientDefaultRange"></div>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

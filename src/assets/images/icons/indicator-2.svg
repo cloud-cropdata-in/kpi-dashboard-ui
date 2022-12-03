@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 21.48 148.17">
+   <defs>
+      <clipPath id="clip-path" transform="translate(0 0)">
+         <path d="M8.81,1.82,0,146.11a2,2,0,0,0,1.94,2.06h17.6a2,2,0,0,0,1.94-2.06L12.67,1.82A1.93,1.93,0,0,0,8.81,1.82Z" style="fill:none"/>
+      </clipPath>
+   </defs>
+   <title>trangle4_1</title>
+   <g id="Layer_2" data-name="Layer 2">
+      <g id="Layer_2-2" data-name="Layer 2">
+         <g style="clip-path:url(#clip-path)">
+            <rect x="-68.71" y="68.71" width="148.17" height="10.74" transform="translate(79.45 68.71) rotate(90)" style="fill:#aa271d"/>
+            <rect x="-57.97" y="68.71" width="148.17" height="10.74" transform="translate(90.19 57.97) rotate(90)" style="fill:red"/>
+            <!-- <rect x="-68.71" y="68.71" width="148.17" height="10.74" transform="translate(79.45 68.71) rotate(90)" style="fill:#afb1b3"/>
+            <rect x="-57.97" y="68.71" width="148.17" height="10.74" transform="translate(90.19 57.97) rotate(90)" style="fill:white"/> -->
+         </g>
+      </g>
+   </g>
+</svg>
