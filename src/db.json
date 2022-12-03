@@ -1,0 +1,1805 @@
+{
+  "authenticate": {
+    "username": "prakashpt0072@gmail.com",
+    "password": "kyuyuyk",
+    "token": "3qlkj423lk54jl3245j"
+  },
+  "dashboard": {
+    "analytics": {
+      "currentActive": "Season",
+      "currentWeek": 48,
+      "currentMonth": 12,
+      "currentYear": 2021,
+      "currentSeason": "Kharif",
+      "start": {
+        "year": 2021,
+        "month": 6,
+        "day": 1
+      },
+      "end": {
+        "year": 2021,
+        "month": 12,
+        "day": 4
+      }
+    },
+    "target_meter_gauge": {
+      "leads": {
+        "collecteLeads": {
+          "achieved": 227728,
+          "target": 277728
+        },
+        "verifiedLeads": {
+          "achieved": 135077,
+          "target": 277728
+        },
+        "expectedValue": {
+          "achieved": 4129817,
+          "target": 4579817
+        },
+        "cropingArea": {
+          "achieved": 192391,
+          "target": 412391
+        },
+        "expectedProduction": {
+          "achieved": 1924719,
+          "target": 2574719
+        }
+      },
+      "rights": {
+        "rightsOnboarded": {
+          "achieved": 135077,
+          "target": 277728
+        },
+        "actualCroppingArea": {
+          "achieved": 4129817,
+          "target": 4579817
+        },
+        "actualProduction": {
+          "achieved": 192391,
+          "target": 412391
+        },
+        "actualValue": {
+          "achieved": 1924719,
+          "target": 2574719
+        }
+      }
+    },
+    "land_holdings_graph": {
+      "land_holdings": {
+        "name": "Actual",
+        "data": [
+          {
+            "x": "Marginal",
+            "y": 8100,
+            "strokeColor": "#ffffff",
+            "goals": [
+              {
+                "name": "Target",
+                "value": 14814,
+                "strokeWidth": 3,
+                "strokeColor": "#2196f3"
+              }
+            ],
+            "fillColor": "#fff200"
+          },
+          {
+            "x": "Small",
+            "y": 8360,
+            "strokeColor": "#ffffff",
+            "goals": [
+              {
+                "name": "Target",
+                "value": 17294,
+                "strokeWidth": 3,
+                "strokeColor": "#2196f3"
+              }
+            ],
+            "fillColor": "#f3f901"
+          },
+          {
+            "x": "Semi-Medium",
+            "y": 966,
+            "strokeColor": "#ffffff",
+            "goals": [
+              {
+                "name": "Target",
+                "value": 1784,
+                "strokeWidth": 3,
+                "strokeColor": "#2196f3"
+              }
+            ],
+            "fillColor": "#fff200"
+          },
+          {
+            "x": "Medium",
+            "y": 226,
+            "strokeColor": "#ffffff",
+            "goals": [
+              {
+                "name": "Target",
+                "value": 414,
+                "strokeWidth": 3,
+                "strokeColor": "#2196f3"
+              }
+            ],
+            "fillColor": "#fff200"
+          },
+          {
+            "x": "Large",
+            "y": 5,
+            "strokeColor": "#ffffff",
+            "goals": [
+              {
+                "name": "Target",
+                "value": 11,
+                "strokeWidth": 3,
+                "strokeColor": "#2196f3"
+              }
+            ],
+            "fillColor": "#f3f901"
+          }
+        ]
+      },
+      "proportion": [
+        {
+          "name": "Marginal",
+          "value": 45.87
+        },
+        {
+          "name": "Small",
+          "value": 47.35
+        },
+        {
+          "name": "Semi-Medium",
+          "value": 5.47
+        },
+        {
+          "name": "Medium",
+          "value": 1.28
+        },
+        {
+          "name": "Large",
+          "value": 0.03
+        }
+      ]
+    }
+  },
+  "collected": {
+    "data": [
+      {
+        "achieved": 1339065000,
+        "target": 2739127000
+      }
+    ],
+    "regional": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Tenali (AP)",
+          "achieved": 396764000,
+          "target": 966687000
+        },
+        {
+          "id": 2,
+          "name": "Deesa (GJ)",
+          "achieved": 13956000,
+          "target": 34358000
+        },
+        {
+          "id": 3,
+          "name": "Kaul (HR)",
+          "achieved": 71661000,
+          "target": 125897000
+        },
+        {
+          "id": 4,
+          "name": "Mainpuri (UP)",
+          "achieved": 117463000,
+          "target": 245750000
+        },
+        {
+          "id": 5,
+          "name": "Jalesar (UP)",
+          "achieved": 124399000,
+          "target": 198667000
+        },
+        {
+          "id": 6,
+          "name": "Unjha (GJ)",
+          "achieved": 10689000,
+          "target": 16025000
+        },
+        {
+          "id": 8,
+          "name": "Chhindwara (MP)",
+          "achieved": 28560000,
+          "target": 60112000
+        },
+        {
+          "id": 9,
+          "name": "Amreli (GJ)",
+          "achieved": 116142000,
+          "target": 214290000
+        },
+        {
+          "id": 10,
+          "name": "Nidadavolu (AP)",
+          "achieved": 373276000,
+          "target": 714247000
+        },
+        {
+          "id": 11,
+          "name": "Morena (MP)",
+          "achieved": 86155000,
+          "target": 163094000
+        }
+      ]
+    },
+    "commodity": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Arhar",
+          "achieved": 2833000,
+          "target": 4688000
+        },
+        {
+          "id": 2,
+          "name": "Bajra",
+          "achieved": 168376000,
+          "target": 306472000
+        },
+        {
+          "id": 18,
+          "name": "Groundnut",
+          "achieved": 122596000,
+          "target": 241928000
+        },
+        {
+          "id": 21,
+          "name": "Maize",
+          "achieved": 73016000,
+          "target": 157391000
+        },
+        {
+          "id": 22,
+          "name": "Moong",
+          "achieved": 14665000,
+          "target": 26712000
+        },
+        {
+          "id": 25,
+          "name": "Paddy",
+          "achieved": 837957000,
+          "target": 1657361000
+        },
+        {
+          "id": 29,
+          "name": "Soybean",
+          "achieved": 8517000,
+          "target": 20596000
+        },
+        {
+          "id": 31,
+          "name": "Turmeric",
+          "achieved": 102498000,
+          "target": 301206000
+        },
+        {
+          "id": 32,
+          "name": "Urad",
+          "achieved": 8607000,
+          "target": 22773000
+        }
+      ]
+    },
+    "landholdings": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Marginal",
+          "achieved": 207844000,
+          "target": 393958000
+        },
+        {
+          "id": 2,
+          "name": "Small",
+          "achieved": 900248000,
+          "target": 1914662000
+        },
+        {
+          "id": 3,
+          "name": "Semi-Medium",
+          "achieved": 157389000,
+          "target": 289426000
+        },
+        {
+          "id": 4,
+          "name": "Medium",
+          "achieved": 71091000,
+          "target": 132900000
+        },
+        {
+          "id": 5,
+          "name": "Large",
+          "achieved": 2493000,
+          "target": 8181000
+        }
+      ]
+    }
+  },
+  "croppingArea": {
+    "data": [
+      {
+        "achieved": 1339065000,
+        "target": 2739127000
+      }
+    ],
+    "regional": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Tenali (AP)",
+          "achieved": 396764000,
+          "target": 966687000
+        },
+        {
+          "id": 2,
+          "name": "Deesa (GJ)",
+          "achieved": 13956000,
+          "target": 34358000
+        },
+        {
+          "id": 3,
+          "name": "Kaul (HR)",
+          "achieved": 71661000,
+          "target": 125897000
+        },
+        {
+          "id": 4,
+          "name": "Mainpuri (UP)",
+          "achieved": 117463000,
+          "target": 245750000
+        },
+        {
+          "id": 5,
+          "name": "Jalesar (UP)",
+          "achieved": 124399000,
+          "target": 198667000
+        },
+        {
+          "id": 6,
+          "name": "Unjha (GJ)",
+          "achieved": 10689000,
+          "target": 16025000
+        },
+        {
+          "id": 8,
+          "name": "Chhindwara (MP)",
+          "achieved": 28560000,
+          "target": 60112000
+        },
+        {
+          "id": 9,
+          "name": "Amreli (GJ)",
+          "achieved": 116142000,
+          "target": 214290000
+        },
+        {
+          "id": 10,
+          "name": "Nidadavolu (AP)",
+          "achieved": 373276000,
+          "target": 714247000
+        },
+        {
+          "id": 11,
+          "name": "Morena (MP)",
+          "achieved": 86155000,
+          "target": 163094000
+        }
+      ]
+    },
+    "commodity": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Arhar",
+          "achieved": 2833000,
+          "target": 4688000
+        },
+        {
+          "id": 2,
+          "name": "Bajra",
+          "achieved": 168376000,
+          "target": 306472000
+        },
+        {
+          "id": 18,
+          "name": "Groundnut",
+          "achieved": 122596000,
+          "target": 241928000
+        },
+        {
+          "id": 21,
+          "name": "Maize",
+          "achieved": 73016000,
+          "target": 157391000
+        },
+        {
+          "id": 22,
+          "name": "Moong",
+          "achieved": 14665000,
+          "target": 26712000
+        },
+        {
+          "id": 25,
+          "name": "Paddy",
+          "achieved": 837957000,
+          "target": 1657361000
+        },
+        {
+          "id": 29,
+          "name": "Soybean",
+          "achieved": 8517000,
+          "target": 20596000
+        },
+        {
+          "id": 31,
+          "name": "Turmeric",
+          "achieved": 102498000,
+          "target": 301206000
+        },
+        {
+          "id": 32,
+          "name": "Urad",
+          "achieved": 8607000,
+          "target": 22773000
+        }
+      ]
+    },
+    "landholdings": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Marginal",
+          "achieved": 207844000,
+          "target": 393958000
+        },
+        {
+          "id": 2,
+          "name": "Small",
+          "achieved": 900248000,
+          "target": 1914662000
+        },
+        {
+          "id": 3,
+          "name": "Semi-Medium",
+          "achieved": 157389000,
+          "target": 289426000
+        },
+        {
+          "id": 4,
+          "name": "Medium",
+          "achieved": 71091000,
+          "target": 132900000
+        },
+        {
+          "id": 5,
+          "name": "Large",
+          "achieved": 2493000,
+          "target": 8181000
+        }
+      ]
+    }
+  },
+  "expectedProduction": {
+    "data": [
+      {
+        "achieved": 1339065000,
+        "target": 2739127000
+      }
+    ],
+    "regional": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Tenali (AP)",
+          "achieved": 396764000,
+          "target": 966687000
+        },
+        {
+          "id": 2,
+          "name": "Deesa (GJ)",
+          "achieved": 13956000,
+          "target": 34358000
+        },
+        {
+          "id": 3,
+          "name": "Kaul (HR)",
+          "achieved": 71661000,
+          "target": 125897000
+        },
+        {
+          "id": 4,
+          "name": "Mainpuri (UP)",
+          "achieved": 117463000,
+          "target": 245750000
+        },
+        {
+          "id": 5,
+          "name": "Jalesar (UP)",
+          "achieved": 124399000,
+          "target": 198667000
+        },
+        {
+          "id": 6,
+          "name": "Unjha (GJ)",
+          "achieved": 10689000,
+          "target": 16025000
+        },
+        {
+          "id": 8,
+          "name": "Chhindwara (MP)",
+          "achieved": 28560000,
+          "target": 60112000
+        },
+        {
+          "id": 9,
+          "name": "Amreli (GJ)",
+          "achieved": 116142000,
+          "target": 214290000
+        },
+        {
+          "id": 10,
+          "name": "Nidadavolu (AP)",
+          "achieved": 373276000,
+          "target": 714247000
+        },
+        {
+          "id": 11,
+          "name": "Morena (MP)",
+          "achieved": 86155000,
+          "target": 163094000
+        }
+      ]
+    },
+    "commodity": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Arhar",
+          "achieved": 2833000,
+          "target": 4688000
+        },
+        {
+          "id": 2,
+          "name": "Bajra",
+          "achieved": 168376000,
+          "target": 306472000
+        },
+        {
+          "id": 18,
+          "name": "Groundnut",
+          "achieved": 122596000,
+          "target": 241928000
+        },
+        {
+          "id": 21,
+          "name": "Maize",
+          "achieved": 73016000,
+          "target": 157391000
+        },
+        {
+          "id": 22,
+          "name": "Moong",
+          "achieved": 14665000,
+          "target": 26712000
+        },
+        {
+          "id": 25,
+          "name": "Paddy",
+          "achieved": 837957000,
+          "target": 1657361000
+        },
+        {
+          "id": 29,
+          "name": "Soybean",
+          "achieved": 8517000,
+          "target": 20596000
+        },
+        {
+          "id": 31,
+          "name": "Turmeric",
+          "achieved": 102498000,
+          "target": 301206000
+        },
+        {
+          "id": 32,
+          "name": "Urad",
+          "achieved": 8607000,
+          "target": 22773000
+        }
+      ]
+    },
+    "landholdings": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Marginal",
+          "achieved": 207844000,
+          "target": 393958000
+        },
+        {
+          "id": 2,
+          "name": "Small",
+          "achieved": 900248000,
+          "target": 1914662000
+        },
+        {
+          "id": 3,
+          "name": "Semi-Medium",
+          "achieved": 157389000,
+          "target": 289426000
+        },
+        {
+          "id": 4,
+          "name": "Medium",
+          "achieved": 71091000,
+          "target": 132900000
+        },
+        {
+          "id": 5,
+          "name": "Large",
+          "achieved": 2493000,
+          "target": 8181000
+        }
+      ]
+    }
+  },
+  "expectedValue": {
+    "data": [
+      {
+        "achieved": 1339065000,
+        "target": 2739127000
+      }
+    ],
+    "regional": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Tenali (AP)",
+          "achieved": 396764000,
+          "target": 966687000
+        },
+        {
+          "id": 2,
+          "name": "Deesa (GJ)",
+          "achieved": 13956000,
+          "target": 34358000
+        },
+        {
+          "id": 3,
+          "name": "Kaul (HR)",
+          "achieved": 71661000,
+          "target": 125897000
+        },
+        {
+          "id": 4,
+          "name": "Mainpuri (UP)",
+          "achieved": 117463000,
+          "target": 245750000
+        },
+        {
+          "id": 5,
+          "name": "Jalesar (UP)",
+          "achieved": 124399000,
+          "target": 198667000
+        },
+        {
+          "id": 6,
+          "name": "Unjha (GJ)",
+          "achieved": 10689000,
+          "target": 16025000
+        },
+        {
+          "id": 8,
+          "name": "Chhindwara (MP)",
+          "achieved": 28560000,
+          "target": 60112000
+        },
+        {
+          "id": 9,
+          "name": "Amreli (GJ)",
+          "achieved": 116142000,
+          "target": 214290000
+        },
+        {
+          "id": 10,
+          "name": "Nidadavolu (AP)",
+          "achieved": 373276000,
+          "target": 714247000
+        },
+        {
+          "id": 11,
+          "name": "Morena (MP)",
+          "achieved": 86155000,
+          "target": 163094000
+        }
+      ]
+    },
+    "commodity": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Arhar",
+          "achieved": 2833000,
+          "target": 4688000
+        },
+        {
+          "id": 2,
+          "name": "Bajra",
+          "achieved": 168376000,
+          "target": 306472000
+        },
+        {
+          "id": 18,
+          "name": "Groundnut",
+          "achieved": 122596000,
+          "target": 241928000
+        },
+        {
+          "id": 21,
+          "name": "Maize",
+          "achieved": 73016000,
+          "target": 157391000
+        },
+        {
+          "id": 22,
+          "name": "Moong",
+          "achieved": 14665000,
+          "target": 26712000
+        },
+        {
+          "id": 25,
+          "name": "Paddy",
+          "achieved": 837957000,
+          "target": 1657361000
+        },
+        {
+          "id": 29,
+          "name": "Soybean",
+          "achieved": 8517000,
+          "target": 20596000
+        },
+        {
+          "id": 31,
+          "name": "Turmeric",
+          "achieved": 102498000,
+          "target": 301206000
+        },
+        {
+          "id": 32,
+          "name": "Urad",
+          "achieved": 8607000,
+          "target": 22773000
+        }
+      ]
+    },
+    "landholdings": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Marginal",
+          "achieved": 207844000,
+          "target": 393958000
+        },
+        {
+          "id": 2,
+          "name": "Small",
+          "achieved": 900248000,
+          "target": 1914662000
+        },
+        {
+          "id": 3,
+          "name": "Semi-Medium",
+          "achieved": 157389000,
+          "target": 289426000
+        },
+        {
+          "id": 4,
+          "name": "Medium",
+          "achieved": 71091000,
+          "target": 132900000
+        },
+        {
+          "id": 5,
+          "name": "Large",
+          "achieved": 2493000,
+          "target": 8181000
+        }
+      ]
+    }
+  },
+  "verified": {
+    "data": [
+      {
+        "achieved": 1339065000,
+        "target": 2739127000
+      }
+    ],
+    "regional": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Tenali (AP)",
+          "achieved": 396764000,
+          "target": 966687000
+        },
+        {
+          "id": 2,
+          "name": "Deesa (GJ)",
+          "achieved": 13956000,
+          "target": 34358000
+        },
+        {
+          "id": 3,
+          "name": "Kaul (HR)",
+          "achieved": 71661000,
+          "target": 125897000
+        },
+        {
+          "id": 4,
+          "name": "Mainpuri (UP)",
+          "achieved": 117463000,
+          "target": 245750000
+        },
+        {
+          "id": 5,
+          "name": "Jalesar (UP)",
+          "achieved": 124399000,
+          "target": 198667000
+        },
+        {
+          "id": 6,
+          "name": "Unjha (GJ)",
+          "achieved": 10689000,
+          "target": 16025000
+        },
+        {
+          "id": 8,
+          "name": "Chhindwara (MP)",
+          "achieved": 28560000,
+          "target": 60112000
+        },
+        {
+          "id": 9,
+          "name": "Amreli (GJ)",
+          "achieved": 116142000,
+          "target": 214290000
+        },
+        {
+          "id": 10,
+          "name": "Nidadavolu (AP)",
+          "achieved": 373276000,
+          "target": 714247000
+        },
+        {
+          "id": 11,
+          "name": "Morena (MP)",
+          "achieved": 86155000,
+          "target": 163094000
+        }
+      ]
+    },
+    "commodity": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Arhar",
+          "achieved": 2833000,
+          "target": 4688000
+        },
+        {
+          "id": 2,
+          "name": "Bajra",
+          "achieved": 168376000,
+          "target": 306472000
+        },
+        {
+          "id": 18,
+          "name": "Groundnut",
+          "achieved": 122596000,
+          "target": 241928000
+        },
+        {
+          "id": 21,
+          "name": "Maize",
+          "achieved": 73016000,
+          "target": 157391000
+        },
+        {
+          "id": 22,
+          "name": "Moong",
+          "achieved": 14665000,
+          "target": 26712000
+        },
+        {
+          "id": 25,
+          "name": "Paddy",
+          "achieved": 837957000,
+          "target": 1657361000
+        },
+        {
+          "id": 29,
+          "name": "Soybean",
+          "achieved": 8517000,
+          "target": 20596000
+        },
+        {
+          "id": 31,
+          "name": "Turmeric",
+          "achieved": 102498000,
+          "target": 301206000
+        },
+        {
+          "id": 32,
+          "name": "Urad",
+          "achieved": 8607000,
+          "target": 22773000
+        }
+      ]
+    },
+    "landholdings": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Marginal",
+          "achieved": 207844000,
+          "target": 393958000
+        },
+        {
+          "id": 2,
+          "name": "Small",
+          "achieved": 900248000,
+          "target": 1914662000
+        },
+        {
+          "id": 3,
+          "name": "Semi-Medium",
+          "achieved": 157389000,
+          "target": 289426000
+        },
+        {
+          "id": 4,
+          "name": "Medium",
+          "achieved": 71091000,
+          "target": 132900000
+        },
+        {
+          "id": 5,
+          "name": "Large",
+          "achieved": 2493000,
+          "target": 8181000
+        }
+      ]
+    }
+  },
+  "rightsOnboarded": {
+    "data": [
+      {
+        "achieved": 1339065000,
+        "target": 2739127000
+      }
+    ],
+    "regional": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Tenali (AP)",
+          "achieved": 396764000,
+          "target": 966687000
+        },
+        {
+          "id": 2,
+          "name": "Deesa (GJ)",
+          "achieved": 13956000,
+          "target": 34358000
+        },
+        {
+          "id": 3,
+          "name": "Kaul (HR)",
+          "achieved": 71661000,
+          "target": 125897000
+        },
+        {
+          "id": 4,
+          "name": "Mainpuri (UP)",
+          "achieved": 117463000,
+          "target": 245750000
+        },
+        {
+          "id": 5,
+          "name": "Jalesar (UP)",
+          "achieved": 124399000,
+          "target": 198667000
+        },
+        {
+          "id": 6,
+          "name": "Unjha (GJ)",
+          "achieved": 10689000,
+          "target": 16025000
+        },
+        {
+          "id": 8,
+          "name": "Chhindwara (MP)",
+          "achieved": 28560000,
+          "target": 60112000
+        },
+        {
+          "id": 9,
+          "name": "Amreli (GJ)",
+          "achieved": 116142000,
+          "target": 214290000
+        },
+        {
+          "id": 10,
+          "name": "Nidadavolu (AP)",
+          "achieved": 373276000,
+          "target": 714247000
+        },
+        {
+          "id": 11,
+          "name": "Morena (MP)",
+          "achieved": 86155000,
+          "target": 163094000
+        }
+      ]
+    },
+    "commodity": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Arhar",
+          "achieved": 2833000,
+          "target": 4688000
+        },
+        {
+          "id": 2,
+          "name": "Bajra",
+          "achieved": 168376000,
+          "target": 306472000
+        },
+        {
+          "id": 18,
+          "name": "Groundnut",
+          "achieved": 122596000,
+          "target": 241928000
+        },
+        {
+          "id": 21,
+          "name": "Maize",
+          "achieved": 73016000,
+          "target": 157391000
+        },
+        {
+          "id": 22,
+          "name": "Moong",
+          "achieved": 14665000,
+          "target": 26712000
+        },
+        {
+          "id": 25,
+          "name": "Paddy",
+          "achieved": 837957000,
+          "target": 1657361000
+        },
+        {
+          "id": 29,
+          "name": "Soybean",
+          "achieved": 8517000,
+          "target": 20596000
+        },
+        {
+          "id": 31,
+          "name": "Turmeric",
+          "achieved": 102498000,
+          "target": 301206000
+        },
+        {
+          "id": 32,
+          "name": "Urad",
+          "achieved": 8607000,
+          "target": 22773000
+        }
+      ]
+    },
+    "landholdings": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Marginal",
+          "achieved": 207844000,
+          "target": 393958000
+        },
+        {
+          "id": 2,
+          "name": "Small",
+          "achieved": 900248000,
+          "target": 1914662000
+        },
+        {
+          "id": 3,
+          "name": "Semi-Medium",
+          "achieved": 157389000,
+          "target": 289426000
+        },
+        {
+          "id": 4,
+          "name": "Medium",
+          "achieved": 71091000,
+          "target": 132900000
+        },
+        {
+          "id": 5,
+          "name": "Large",
+          "achieved": 2493000,
+          "target": 8181000
+        }
+      ]
+    }
+  },
+  "actualCroppingArea": {
+    "data": [
+      {
+        "achieved": 1339065000,
+        "target": 2739127000
+      }
+    ],
+    "regional": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Tenali (AP)",
+          "achieved": 396764000,
+          "target": 966687000
+        },
+        {
+          "id": 2,
+          "name": "Deesa (GJ)",
+          "achieved": 13956000,
+          "target": 34358000
+        },
+        {
+          "id": 3,
+          "name": "Kaul (HR)",
+          "achieved": 71661000,
+          "target": 125897000
+        },
+        {
+          "id": 4,
+          "name": "Mainpuri (UP)",
+          "achieved": 117463000,
+          "target": 245750000
+        },
+        {
+          "id": 5,
+          "name": "Jalesar (UP)",
+          "achieved": 124399000,
+          "target": 198667000
+        },
+        {
+          "id": 6,
+          "name": "Unjha (GJ)",
+          "achieved": 10689000,
+          "target": 16025000
+        },
+        {
+          "id": 8,
+          "name": "Chhindwara (MP)",
+          "achieved": 28560000,
+          "target": 60112000
+        },
+        {
+          "id": 9,
+          "name": "Amreli (GJ)",
+          "achieved": 116142000,
+          "target": 214290000
+        },
+        {
+          "id": 10,
+          "name": "Nidadavolu (AP)",
+          "achieved": 373276000,
+          "target": 714247000
+        },
+        {
+          "id": 11,
+          "name": "Morena (MP)",
+          "achieved": 86155000,
+          "target": 163094000
+        }
+      ]
+    },
+    "commodity": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Arhar",
+          "achieved": 2833000,
+          "target": 4688000
+        },
+        {
+          "id": 2,
+          "name": "Bajra",
+          "achieved": 168376000,
+          "target": 306472000
+        },
+        {
+          "id": 18,
+          "name": "Groundnut",
+          "achieved": 122596000,
+          "target": 241928000
+        },
+        {
+          "id": 21,
+          "name": "Maize",
+          "achieved": 73016000,
+          "target": 157391000
+        },
+        {
+          "id": 22,
+          "name": "Moong",
+          "achieved": 14665000,
+          "target": 26712000
+        },
+        {
+          "id": 25,
+          "name": "Paddy",
+          "achieved": 837957000,
+          "target": 1657361000
+        },
+        {
+          "id": 29,
+          "name": "Soybean",
+          "achieved": 8517000,
+          "target": 20596000
+        },
+        {
+          "id": 31,
+          "name": "Turmeric",
+          "achieved": 102498000,
+          "target": 301206000
+        },
+        {
+          "id": 32,
+          "name": "Urad",
+          "achieved": 8607000,
+          "target": 22773000
+        }
+      ]
+    },
+    "landholdings": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Marginal",
+          "achieved": 207844000,
+          "target": 393958000
+        },
+        {
+          "id": 2,
+          "name": "Small",
+          "achieved": 900248000,
+          "target": 1914662000
+        },
+        {
+          "id": 3,
+          "name": "Semi-Medium",
+          "achieved": 157389000,
+          "target": 289426000
+        },
+        {
+          "id": 4,
+          "name": "Medium",
+          "achieved": 71091000,
+          "target": 132900000
+        },
+        {
+          "id": 5,
+          "name": "Large",
+          "achieved": 2493000,
+          "target": 8181000
+        }
+      ]
+    }
+  },
+  "actualProduction": {
+    "data": [
+      {
+        "achieved": 1339065000,
+        "target": 2739127000
+      }
+    ],
+    "regional": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Tenali (AP)",
+          "achieved": 396764000,
+          "target": 966687000
+        },
+        {
+          "id": 2,
+          "name": "Deesa (GJ)",
+          "achieved": 13956000,
+          "target": 34358000
+        },
+        {
+          "id": 3,
+          "name": "Kaul (HR)",
+          "achieved": 71661000,
+          "target": 125897000
+        },
+        {
+          "id": 4,
+          "name": "Mainpuri (UP)",
+          "achieved": 117463000,
+          "target": 245750000
+        },
+        {
+          "id": 5,
+          "name": "Jalesar (UP)",
+          "achieved": 124399000,
+          "target": 198667000
+        },
+        {
+          "id": 6,
+          "name": "Unjha (GJ)",
+          "achieved": 10689000,
+          "target": 16025000
+        },
+        {
+          "id": 8,
+          "name": "Chhindwara (MP)",
+          "achieved": 28560000,
+          "target": 60112000
+        },
+        {
+          "id": 9,
+          "name": "Amreli (GJ)",
+          "achieved": 116142000,
+          "target": 214290000
+        },
+        {
+          "id": 10,
+          "name": "Nidadavolu (AP)",
+          "achieved": 373276000,
+          "target": 714247000
+        },
+        {
+          "id": 11,
+          "name": "Morena (MP)",
+          "achieved": 86155000,
+          "target": 163094000
+        }
+      ]
+    },
+    "commodity": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Arhar",
+          "achieved": 2833000,
+          "target": 4688000
+        },
+        {
+          "id": 2,
+          "name": "Bajra",
+          "achieved": 168376000,
+          "target": 306472000
+        },
+        {
+          "id": 18,
+          "name": "Groundnut",
+          "achieved": 122596000,
+          "target": 241928000
+        },
+        {
+          "id": 21,
+          "name": "Maize",
+          "achieved": 73016000,
+          "target": 157391000
+        },
+        {
+          "id": 22,
+          "name": "Moong",
+          "achieved": 14665000,
+          "target": 26712000
+        },
+        {
+          "id": 25,
+          "name": "Paddy",
+          "achieved": 837957000,
+          "target": 1657361000
+        },
+        {
+          "id": 29,
+          "name": "Soybean",
+          "achieved": 8517000,
+          "target": 20596000
+        },
+        {
+          "id": 31,
+          "name": "Turmeric",
+          "achieved": 102498000,
+          "target": 301206000
+        },
+        {
+          "id": 32,
+          "name": "Urad",
+          "achieved": 8607000,
+          "target": 22773000
+        }
+      ]
+    },
+    "landholdings": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Marginal",
+          "achieved": 207844000,
+          "target": 393958000
+        },
+        {
+          "id": 2,
+          "name": "Small",
+          "achieved": 900248000,
+          "target": 1914662000
+        },
+        {
+          "id": 3,
+          "name": "Semi-Medium",
+          "achieved": 157389000,
+          "target": 289426000
+        },
+        {
+          "id": 4,
+          "name": "Medium",
+          "achieved": 71091000,
+          "target": 132900000
+        },
+        {
+          "id": 5,
+          "name": "Large",
+          "achieved": 2493000,
+          "target": 8181000
+        }
+      ]
+    }
+  },
+  "actualValue": {
+    "data": [
+      {
+        "achieved": 1339065000,
+        "target": 2739127000
+      }
+    ],
+    "regional": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Tenali (AP)",
+          "achieved": 396764000,
+          "target": 966687000
+        },
+        {
+          "id": 2,
+          "name": "Deesa (GJ)",
+          "achieved": 13956000,
+          "target": 34358000
+        },
+        {
+          "id": 3,
+          "name": "Kaul (HR)",
+          "achieved": 71661000,
+          "target": 125897000
+        },
+        {
+          "id": 4,
+          "name": "Mainpuri (UP)",
+          "achieved": 117463000,
+          "target": 245750000
+        },
+        {
+          "id": 5,
+          "name": "Jalesar (UP)",
+          "achieved": 124399000,
+          "target": 198667000
+        },
+        {
+          "id": 6,
+          "name": "Unjha (GJ)",
+          "achieved": 10689000,
+          "target": 16025000
+        },
+        {
+          "id": 8,
+          "name": "Chhindwara (MP)",
+          "achieved": 28560000,
+          "target": 60112000
+        },
+        {
+          "id": 9,
+          "name": "Amreli (GJ)",
+          "achieved": 116142000,
+          "target": 214290000
+        },
+        {
+          "id": 10,
+          "name": "Nidadavolu (AP)",
+          "achieved": 373276000,
+          "target": 714247000
+        },
+        {
+          "id": 11,
+          "name": "Morena (MP)",
+          "achieved": 86155000,
+          "target": 163094000
+        }
+      ]
+    },
+    "commodity": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Arhar",
+          "achieved": 2833000,
+          "target": 4688000
+        },
+        {
+          "id": 2,
+          "name": "Bajra",
+          "achieved": 168376000,
+          "target": 306472000
+        },
+        {
+          "id": 18,
+          "name": "Groundnut",
+          "achieved": 122596000,
+          "target": 241928000
+        },
+        {
+          "id": 21,
+          "name": "Maize",
+          "achieved": 73016000,
+          "target": 157391000
+        },
+        {
+          "id": 22,
+          "name": "Moong",
+          "achieved": 14665000,
+          "target": 26712000
+        },
+        {
+          "id": 25,
+          "name": "Paddy",
+          "achieved": 837957000,
+          "target": 1657361000
+        },
+        {
+          "id": 29,
+          "name": "Soybean",
+          "achieved": 8517000,
+          "target": 20596000
+        },
+        {
+          "id": 31,
+          "name": "Turmeric",
+          "achieved": 102498000,
+          "target": 301206000
+        },
+        {
+          "id": 32,
+          "name": "Urad",
+          "achieved": 8607000,
+          "target": 22773000
+        }
+      ]
+    },
+    "landholdings": {
+      "total": [
+        {
+          "achieved": 1339065000,
+          "target": 2739127000
+        }
+      ],
+      "data": [
+        {
+          "id": 1,
+          "name": "Marginal",
+          "achieved": 207844000,
+          "target": 393958000
+        },
+        {
+          "id": 2,
+          "name": "Small",
+          "achieved": 900248000,
+          "target": 1914662000
+        },
+        {
+          "id": 3,
+          "name": "Semi-Medium",
+          "achieved": 157389000,
+          "target": 289426000
+        },
+        {
+          "id": 4,
+          "name": "Medium",
+          "achieved": 71091000,
+          "target": 132900000
+        },
+        {
+          "id": 5,
+          "name": "Large",
+          "achieved": 2493000,
+          "target": 8181000
+        }
+      ]
+    }
+  }
+}
