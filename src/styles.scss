@@ -1068,8 +1068,13 @@ a {
     // }
     &.active {
       border-color: $secondary-color;
-      color: white !important;
-      background-color: $secondary-color;
+      // color: white !important;
+      color: $secondary-color !important;
+
+      svg{
+        fill: #00bb00 !important
+      }
+      // background-color: $secondary-color;
 
       // span {
       //     visibility: visible;

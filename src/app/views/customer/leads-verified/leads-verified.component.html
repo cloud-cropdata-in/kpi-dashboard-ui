@@ -15,9 +15,6 @@
           </a>
           <a [routerLink]="['/customer/case-registered']" class="md-ripples ripples-dark" routerLinkActive="active">Cases</a>
           <a [routerLink]="['/customer/right-sign']" class="md-ripples ripples-dark" routerLinkActive="active">Rights</a>
-          <!-- <a [routerLink]="['/customer/farmers-right']" class="md-ripples ripples-dark" routerLinkActive="active">Farmer
-            Rights</a> -->
-          <!-- <a [routerLink]="['/customer/market-place']" routerLinkActive="active">Market Place</a> -->
         </div>
       </div>
       <div class="separator mb-2"></div>
@@ -34,7 +31,9 @@
               (click)="toggleShowLeadsDetail()">
               <div class="labels" *ngIf="analyticsDetails !=null">
                 <div class="d-flex align-items-center justify-content-between">
-                  <div class="labelText">Leads (#)</div>
+                  <div class="labelText">Leads (#)
+                    <svg _ngcontent-kxy-c215="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="width: 20px;margin-left: 5px;fill: #00bb00 !important;"><path _ngcontent-kxy-c215="" d="M256 512c141.4 0 256-114.6 256-256S397.4 0 256 0S0 114.6 0 256S114.6 512 256 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path></svg>
+                  </div>
                   <span class="target" [attr.title]="analyticsDetails.collecteLeads.target">Target -
                     {{analyticsDetails.collecteLeads.target}}</span>
                 </div>
@@ -415,20 +414,20 @@
       </div>
 
       <div *ngIf="isLeadsDetailShown" class="col-12 detailAnalysis boxDetail">
-        <app-leads class="row"></app-leads>
+        <app-leads-2 class="row"></app-leads-2>
       </div>
       <div *ngIf="isVerifiedLeadsDetailShown" class="col-12 detailAnalysis boxDetail">
-        <app-verified-leads class="row"></app-verified-leads>
+        <app-verified-leads-2 class="row"></app-verified-leads-2>
       </div>
 
         <div *ngIf="isCropAreaDetailShown" class="col-12 detailAnalysis boxDetail">
-          <app-crop-area class="row"></app-crop-area>
+          <app-crop-area-2 class="row"></app-crop-area-2>
         </div>
         <div *ngIf="isExpectedProductionDetailShown" class="col-12 detailAnalysis boxDetail">
-          <app-expected-production class="row"></app-expected-production>
+          <app-expected-production-2 class="row"></app-expected-production-2>
         </div>
         <div *ngIf="isExpectedValueDetailShown" class="col-12 detailAnalysis boxDetail">
-          <app-expected-value class="row"></app-expected-value>
+          <app-expected-value-2 class="row"></app-expected-value-2>
         </div>
 
     </div>

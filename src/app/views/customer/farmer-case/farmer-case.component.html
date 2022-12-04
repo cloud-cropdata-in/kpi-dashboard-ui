@@ -15,9 +15,6 @@
           </a>
           <a [routerLink]="['/customer/case-registered']" class="md-ripples ripples-dark" routerLinkActive="active">Cases</a>
           <a [routerLink]="['/customer/right-sign']" class="md-ripples ripples-dark" routerLinkActive="active">Rights</a>
-          <!-- <a [routerLink]="['/customer/farmers-right']" class="md-ripples ripples-dark" routerLinkActive="active">Farmer
-            Rights</a> -->
-          <!-- <a [routerLink]="['/customer/market-place']" routerLinkActive="active">Market Place</a> -->
         </div>
       </div>
       <div class="separator mb-2"></div>
@@ -34,7 +31,7 @@
               (click)="toggleShowLeadsDetail()">
               <div class="labels" *ngIf="analyticsDetails !=null">
                 <div class="d-flex align-items-center justify-content-between">
-                  <div class="labelText">Leads (#)</div>
+                  <div class="labelText">Cases (#)</div>
                   <span class="target" [attr.title]="analyticsDetails.collecteLeads.target">Target -
                     {{analyticsDetails.collecteLeads.target}}</span>
                 </div>
@@ -415,20 +412,20 @@
       </div>
 
       <div *ngIf="isLeadsDetailShown" class="col-12 detailAnalysis boxDetail">
-        <app-leads class="row"></app-leads>
+        <app-leads-3 class="row"></app-leads-3>
       </div>
       <div *ngIf="isVerifiedLeadsDetailShown" class="col-12 detailAnalysis boxDetail">
-        <app-verified-leads class="row"></app-verified-leads>
+        <app-verified-leads-3 class="row"></app-verified-leads-3>
       </div>
 
         <div *ngIf="isCropAreaDetailShown" class="col-12 detailAnalysis boxDetail">
-          <app-crop-area class="row"></app-crop-area>
+          <app-crop-area-3 class="row"></app-crop-area-3>
         </div>
         <div *ngIf="isExpectedProductionDetailShown" class="col-12 detailAnalysis boxDetail">
-          <app-expected-production class="row"></app-expected-production>
+          <app-expected-production-3 class="row"></app-expected-production-3>
         </div>
         <div *ngIf="isExpectedValueDetailShown" class="col-12 detailAnalysis boxDetail">
-          <app-expected-value class="row"></app-expected-value>
+          <app-expected-value-3 class="row"></app-expected-value-3>
         </div>
 
     </div>

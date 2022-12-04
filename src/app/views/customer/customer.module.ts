@@ -34,6 +34,21 @@ import { ActualCropAreaComponent } from './farmers-right/actual-crop-area/actual
 import { ActualProductionComponent } from './farmers-right/actual-production/actual-production.component';
 import { ActualValueComponent } from './farmers-right/actual-value/actual-value.component';
 import { CropAreaComponent } from './farmers/crop-area/crop-area.component';
+import { RightSignComponent } from './right-sign/right-sign.component';
+import { LeadsComponent2 } from './leads-verified/leads/leads.component';
+import { ExpectedProductionComponent2 } from './leads-verified/expected-production/expected-production.component';
+import { ExpectedValueComponent2 } from './leads-verified/expected-value/expected-value.component';
+import { CropAreaComponent2 } from './leads-verified/crop-area/crop-area.component';
+import { FarmersCaseComponent } from './farmer-case/farmer-case.component';
+import { LeadsComponent3 } from './farmer-case/leads/leads.component';
+import { ExpectedProductionComponent3 } from './farmer-case/expected-production/expected-production.component';
+import { ExpectedValueComponent3 } from './farmer-case/expected-value/expected-value.component';
+import { CropAreaComponent3 } from './farmer-case/crop-area/crop-area.component';
+import { LeadsComponent4 } from './right-sign/leads/leads.component';
+import { ExpectedProductionComponent4 } from './right-sign/expected-production/expected-production.component';
+import { ExpectedValueComponent4 } from './right-sign/expected-value/expected-value.component';
+import { CropAreaComponent4 } from './right-sign/crop-area/crop-area.component';
+import { LeadVerifiedLeadsComponent } from './leads-verified/leads-verified.component';
 
 
 @NgModule({
@@ -51,7 +66,33 @@ import { CropAreaComponent } from './farmers/crop-area/crop-area.component';
     ActualCropAreaComponent,
     ActualProductionComponent,
     ActualValueComponent,
-    CropAreaComponent
+    CropAreaComponent,
+    RightSignComponent,
+
+
+    //new VerifiedLeads
+    LeadVerifiedLeadsComponent,
+    LeadsComponent2,
+    ExpectedProductionComponent2,
+    ExpectedValueComponent2,
+    CropAreaComponent2,
+    //new end
+
+    //new FarmersCase
+    FarmersCaseComponent,
+    LeadsComponent3,
+    ExpectedProductionComponent3,
+    ExpectedValueComponent3,
+    CropAreaComponent3,
+    //new end
+
+    //new FarmersCase
+    RightSignComponent,
+    LeadsComponent4,
+    ExpectedProductionComponent4,
+    ExpectedValueComponent4,
+    CropAreaComponent4,
+    //new end
   ],
   imports: [
     CommonModule,
